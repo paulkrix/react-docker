@@ -1,0 +1,42 @@
+body {
+  background-color: #A91A1A;
+}
+.world {
+  padding-left: 1px;
+  padding-top: 1px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate( -50%, -50% );
+}
+.row {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  margin-top: -1px;
+}
+.square {
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  margin-left: -1px;
+  display: inline-block;
+  z-index: -1;
+  position: relative;
+  &[data-value="0"] {
+  }
+  &[data-value="1"] {
+    background-color: white;
+    border-color: #A91A1A;
+    z-index: 0;
+  }
+}
+.person {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  border-radius: 50%;
+  background: #2c2d58;
+}
